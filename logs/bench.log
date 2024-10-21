@@ -1,0 +1,156 @@
+2024-10-16 15:17:30,741 DEBUG cd task_bench && python3 -m venv env
+2024-10-16 15:17:32,460 DEBUG cd task_bench && /Users/vaishnavi/Documents/frappe_poc/task_management_system/task_bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-10-16 15:17:33,612 DEBUG cd task_bench && /Users/vaishnavi/Documents/frappe_poc/task_management_system/task_bench/env/bin/python -m pip install --quiet wheel
+2024-10-16 15:17:34,212 LOG Getting frappe
+2024-10-16 15:17:34,212 DEBUG cd task_bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2024-10-16 15:17:37,152 LOG Installing frappe
+2024-10-16 15:17:37,152 DEBUG cd /Users/vaishnavi/Documents/frappe_poc/task_management_system/task_bench && /Users/vaishnavi/Documents/frappe_poc/task_management_system/task_bench/env/bin/python -m pip install --quiet --upgrade -e /Users/vaishnavi/Documents/frappe_poc/task_management_system/task_bench/apps/frappe 
+2024-10-16 15:18:02,882 DEBUG cd /Users/vaishnavi/Documents/frappe_poc/task_management_system/task_bench/apps/frappe && yarn install --check-files
+2024-10-16 15:18:09,059 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-10-16 15:18:09,059 DEBUG cd task_bench && bench build
+2024-10-16 15:18:09,237 INFO /opt/anaconda3/bin/bench build
+2024-10-16 15:18:21,067 LOG setting up backups
+2024-10-16 15:18:25,213 LOG backups were set up
+2024-10-16 15:18:25,213 INFO Bench task_bench initialized
+2024-10-16 15:19:33,827 INFO /opt/anaconda3/bin/bench new-site mytasksite.localhost
+2024-10-16 15:20:58,952 INFO /opt/anaconda3/bin/bench new-app task_manager
+2024-10-16 15:20:58,956 LOG creating new app task_manager
+2024-10-16 15:21:49,651 LOG Installing task_manager
+2024-10-16 15:21:49,652 DEBUG cd /Users/vaishnavi/Documents/frappe_poc/task_management_system/task_bench && /Users/vaishnavi/Documents/frappe_poc/task_management_system/task_bench/env/bin/python -m pip install --quiet --upgrade -e /Users/vaishnavi/Documents/frappe_poc/task_management_system/task_bench/apps/task_manager 
+2024-10-16 15:21:50,731 DEBUG bench build --app task_manager
+2024-10-16 15:21:50,829 INFO /opt/anaconda3/bin/bench build --app task_manager
+2024-10-16 15:21:52,330 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-10-16 15:22:29,405 INFO /opt/anaconda3/bin/bench --site mytasksite.localhost install-app task_manager
+2024-10-16 15:28:04,617 INFO /opt/anaconda3/bin/bench start
+2024-10-16 15:28:05,488 INFO /opt/anaconda3/bin/bench watch
+2024-10-16 15:28:05,500 INFO /opt/anaconda3/bin/bench schedule
+2024-10-16 15:28:05,509 INFO /opt/anaconda3/bin/bench serve --port 8000
+2024-10-16 15:28:05,511 INFO /opt/anaconda3/bin/bench worker
+2024-10-16 15:28:53,285 INFO /opt/anaconda3/bin/bench use mytasksite.localhost
+2024-10-16 15:28:56,388 INFO /opt/anaconda3/bin/bench start
+2024-10-16 15:28:56,714 INFO /opt/anaconda3/bin/bench worker
+2024-10-16 15:28:56,715 INFO /opt/anaconda3/bin/bench watch
+2024-10-16 15:28:56,728 INFO /opt/anaconda3/bin/bench serve --port 8000
+2024-10-16 15:28:56,738 INFO /opt/anaconda3/bin/bench schedule
+2024-10-16 17:35:18,038 INFO /opt/anaconda3/bin/bench --version
+2024-10-16 18:00:01,200 INFO /opt/anaconda3/bin/bench --verbose --site all backup
+2024-10-17 10:23:17,488 INFO /opt/anaconda3/bin/bench start
+2024-10-17 10:23:17,950 INFO /opt/anaconda3/bin/bench serve --port 8000
+2024-10-17 10:23:17,950 INFO /opt/anaconda3/bin/bench worker
+2024-10-17 10:23:17,951 INFO /opt/anaconda3/bin/bench watch
+2024-10-17 10:23:17,968 INFO /opt/anaconda3/bin/bench schedule
+2024-10-17 10:35:15,016 INFO /opt/anaconda3/bin/bench --site mytasksite.localhost console
+2024-10-17 10:37:26,869 INFO /opt/anaconda3/bin/bench --site mytasksite.localhost execute frappe.core.doctype.doctype.doctype --args ["Task", "task_manager"]
+2024-10-17 10:40:03,465 INFO /opt/anaconda3/bin/bench --site mytasksite.localhost execute frappe.client.get_list --args ["Task", {"fields": ["*"]}]
+2024-10-17 10:41:46,299 INFO /opt/anaconda3/bin/bench start
+2024-10-17 10:41:46,667 INFO /opt/anaconda3/bin/bench schedule
+2024-10-17 10:41:46,667 INFO /opt/anaconda3/bin/bench serve --port 8000
+2024-10-17 10:41:46,688 INFO /opt/anaconda3/bin/bench watch
+2024-10-17 10:41:46,689 INFO /opt/anaconda3/bin/bench worker
+2024-10-17 12:00:01,136 INFO /opt/anaconda3/bin/bench --verbose --site all backup
+2024-10-17 13:18:52,734 INFO /opt/anaconda3/bin/bench start
+2024-10-17 13:18:53,130 INFO /opt/anaconda3/bin/bench schedule
+2024-10-17 13:18:53,131 INFO /opt/anaconda3/bin/bench watch
+2024-10-17 13:18:53,134 INFO /opt/anaconda3/bin/bench serve --port 8000
+2024-10-17 13:18:53,141 INFO /opt/anaconda3/bin/bench worker
+2024-10-17 17:23:15,874 INFO /opt/anaconda3/bin/bench execute frappe.core.doctype.doctype.doctype.new_doctype --kwargs {'name':'TaskUser', 'module':'Task Management', 'custom':0, 'fields':[{'fieldname':'username', 'fieldtype':'Data', 'label':'Username', 'reqd':1}]}
+2024-10-17 17:25:17,341 INFO /opt/anaconda3/bin/bench new-doctype TaskUser --module Task Management --fields username:Data:Username:1
+2024-10-17 17:27:20,629 INFO /opt/anaconda3/bin/bench start
+2024-10-17 17:27:21,053 INFO /opt/anaconda3/bin/bench schedule
+2024-10-17 17:27:21,053 INFO /opt/anaconda3/bin/bench serve --port 8000
+2024-10-17 17:27:21,056 INFO /opt/anaconda3/bin/bench worker
+2024-10-17 17:27:21,064 INFO /opt/anaconda3/bin/bench watch
+2024-10-17 17:41:24,457 INFO /opt/anaconda3/bin/bench migrate
+2024-10-17 17:41:36,606 INFO /opt/anaconda3/bin/bench start
+2024-10-17 17:41:36,985 INFO /opt/anaconda3/bin/bench serve --port 8000
+2024-10-17 17:41:36,986 INFO /opt/anaconda3/bin/bench schedule
+2024-10-17 17:41:36,992 INFO /opt/anaconda3/bin/bench watch
+2024-10-17 17:41:36,993 INFO /opt/anaconda3/bin/bench worker
+2024-10-17 17:42:27,727 INFO /opt/anaconda3/bin/bench migrate
+2024-10-17 18:00:00,749 INFO /opt/anaconda3/bin/bench --verbose --site all backup
+2024-10-18 00:00:01,410 INFO /opt/anaconda3/bin/bench --verbose --site all backup
+2024-10-18 02:03:54,193 INFO /opt/anaconda3/bin/bench start
+2024-10-18 02:03:54,672 INFO /opt/anaconda3/bin/bench watch
+2024-10-18 02:03:54,680 INFO /opt/anaconda3/bin/bench serve --port 8000
+2024-10-18 02:03:54,684 INFO /opt/anaconda3/bin/bench schedule
+2024-10-18 02:03:54,688 INFO /opt/anaconda3/bin/bench worker
+2024-10-18 02:08:27,734 INFO /opt/anaconda3/bin/bench mariadb
+2024-10-18 10:27:24,419 INFO /opt/anaconda3/bin/bench start
+2024-10-18 10:27:24,848 INFO /opt/anaconda3/bin/bench watch
+2024-10-18 10:27:24,857 INFO /opt/anaconda3/bin/bench worker
+2024-10-18 10:27:24,858 INFO /opt/anaconda3/bin/bench schedule
+2024-10-18 10:27:24,868 INFO /opt/anaconda3/bin/bench serve --port 8000
+2024-10-18 12:00:00,722 INFO /opt/anaconda3/bin/bench --verbose --site all backup
+2024-10-20 00:01:04,657 INFO /opt/anaconda3/bin/bench --verbose --site all backup
+2024-10-20 15:37:22,014 INFO /opt/anaconda3/bin/bench run
+2024-10-20 15:37:59,932 INFO /opt/anaconda3/bin/bench start
+2024-10-20 15:38:00,345 INFO /opt/anaconda3/bin/bench serve --port 8000
+2024-10-20 15:38:00,348 INFO /opt/anaconda3/bin/bench schedule
+2024-10-20 15:38:00,349 INFO /opt/anaconda3/bin/bench watch
+2024-10-20 15:38:00,355 INFO /opt/anaconda3/bin/bench worker
+2024-10-20 15:42:30,995 INFO /opt/anaconda3/bin/bench start
+2024-10-20 15:42:31,375 INFO /opt/anaconda3/bin/bench serve --port 8000
+2024-10-20 15:42:31,379 INFO /opt/anaconda3/bin/bench watch
+2024-10-20 15:42:31,380 INFO /opt/anaconda3/bin/bench worker
+2024-10-20 15:42:31,385 INFO /opt/anaconda3/bin/bench schedule
+2024-10-20 15:47:01,067 INFO /opt/anaconda3/bin/bench --site mytasksite.localhost console
+2024-10-20 15:49:15,049 INFO /opt/anaconda3/bin/bench use mytasksite.localhost
+2024-10-20 15:49:36,021 INFO /opt/anaconda3/bin/bench --site mytasksite.localhost export-fixtures
+2024-10-20 15:50:40,369 INFO /opt/anaconda3/bin/bench --site mytasksite.localhost migrate
+2024-10-20 15:51:06,143 INFO /opt/anaconda3/bin/bench start
+2024-10-20 15:51:06,554 INFO /opt/anaconda3/bin/bench schedule
+2024-10-20 15:51:06,554 INFO /opt/anaconda3/bin/bench watch
+2024-10-20 15:51:06,562 INFO /opt/anaconda3/bin/bench serve --port 8000
+2024-10-20 15:51:06,562 INFO /opt/anaconda3/bin/bench worker
+2024-10-20 15:51:12,682 INFO /opt/anaconda3/bin/bench --site mytasksite.localhost migrate
+2024-10-20 15:55:29,965 INFO /opt/anaconda3/bin/bench --site mytasksite.localhost migrate
+2024-10-21 09:17:03,983 INFO /opt/anaconda3/bin/bench start
+2024-10-21 09:18:43,440 INFO /opt/anaconda3/bin/bench start
+2024-10-21 09:22:49,130 INFO /opt/anaconda3/bin/bench start
+2024-10-21 09:24:25,457 INFO /opt/anaconda3/bin/bench restart
+2024-10-21 09:24:25,467 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-10-21 09:24:36,645 INFO /opt/anaconda3/bin/bench restart
+2024-10-21 09:24:36,653 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-10-21 09:29:45,985 INFO /opt/anaconda3/bin/bench restart
+2024-10-21 09:29:46,606 DEBUG cd /Users/vaishnavi/Documents/L&D/frappe_poc/task_management_system/task_bench && supervisorctl restart frappe:
+2024-10-21 09:29:46,705 WARNING cd /Users/vaishnavi/Documents/L&D/frappe_poc/task_management_system/task_bench && supervisorctl restart frappe: executed with exit code 7
+2024-10-21 09:29:46,705 WARNING /opt/anaconda3/bin/bench restart executed with exit code 1
+2024-10-21 09:29:56,698 INFO /opt/anaconda3/bin/bench start
+2024-10-21 09:30:18,552 INFO /opt/anaconda3/bin/bench restart
+2024-10-21 09:30:18,713 DEBUG cd /Users/vaishnavi/Documents/L&D/frappe_poc/task_management_system/task_bench && supervisorctl restart frappe:
+2024-10-21 09:30:18,810 WARNING cd /Users/vaishnavi/Documents/L&D/frappe_poc/task_management_system/task_bench && supervisorctl restart frappe: executed with exit code 7
+2024-10-21 09:30:18,810 WARNING /opt/anaconda3/bin/bench restart executed with exit code 1
+2024-10-21 09:34:53,014 INFO /opt/anaconda3/bin/bench start
+2024-10-21 09:41:34,332 INFO /opt/anaconda3/bin/bench restart
+2024-10-21 09:41:34,964 DEBUG cd /Users/vaishnavi/Documents/L&D/frappe_poc/task_management_system/task_bench && supervisorctl restart frappe:
+2024-10-21 09:41:35,061 WARNING cd /Users/vaishnavi/Documents/L&D/frappe_poc/task_management_system/task_bench && supervisorctl restart frappe: executed with exit code 7
+2024-10-21 09:41:35,061 WARNING /opt/anaconda3/bin/bench restart executed with exit code 1
+2024-10-21 09:46:00,791 INFO /opt/anaconda3/bin/bench start
+2024-10-21 09:51:49,554 INFO /opt/anaconda3/bin/bench --version
+2024-10-21 09:52:01,529 INFO /opt/anaconda3/bin/bench start
+2024-10-21 09:54:08,325 INFO /opt/anaconda3/bin/bench start
+2024-10-21 09:57:09,440 INFO /opt/anaconda3/bin/bench start
+2024-10-21 10:03:47,534 INFO /opt/anaconda3/bin/bench start
+2024-10-21 10:07:23,048 INFO /opt/anaconda3/bin/bench start
+2024-10-21 10:07:23,376 INFO /opt/anaconda3/bin/bench schedule
+2024-10-21 10:07:23,384 INFO /opt/anaconda3/bin/bench watch
+2024-10-21 10:07:23,396 INFO /opt/anaconda3/bin/bench worker
+2024-10-21 10:09:31,828 INFO /opt/anaconda3/bin/bench update
+2024-10-21 10:09:33,041 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2024-10-21 10:09:43,112 WARNING /opt/anaconda3/bin/bench update executed with exit code 1
+2024-10-21 10:09:43,463 INFO /opt/anaconda3/bin/bench build
+2024-10-21 10:10:16,069 INFO /opt/anaconda3/bin/bench use mytasksite.localhost
+2024-10-21 10:12:26,868 INFO /opt/anaconda3/bin/bench --site mytasksite.localhost install-app frappe
+2024-10-21 10:12:34,389 INFO /opt/anaconda3/bin/bench --site mytasksite.localhost install-app task_bench
+2024-10-21 10:17:31,319 INFO /opt/anaconda3/bin/bench build
+2024-10-21 10:44:30,588 INFO /opt/anaconda3/envs/frappeenv/bin/bench start
+2024-10-21 10:44:30,838 INFO /opt/anaconda3/envs/frappeenv/bin/bench schedule
+2024-10-21 10:44:30,844 INFO /opt/anaconda3/envs/frappeenv/bin/bench serve --port 8000
+2024-10-21 10:44:30,849 INFO /opt/anaconda3/envs/frappeenv/bin/bench watch
+2024-10-21 10:44:30,862 INFO /opt/anaconda3/envs/frappeenv/bin/bench worker

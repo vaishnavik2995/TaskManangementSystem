@@ -1,0 +1,8 @@
+2024-10-17 10:37:21,035 INFO ipython === bench console session ===
+2024-10-17 10:37:21,035 INFO ipython bench --site mytasksite.localhost execute frappe.core.doctype.doctype.doctype --args '["Task", "task_manager"]'
+2024-10-17 10:37:21,035 INFO ipython bench --site mytasksite.localhost execute frappe.core.doctype.doctype.doctype --args '["Task", "task_manager"]'
+2024-10-17 10:37:21,035 INFO ipython === session end ===
+2024-10-20 15:48:42,230 INFO ipython === bench console session ===
+2024-10-20 15:48:42,230 INFO ipython frappe.get_all("DocType", filters={"name": ["in", ["Task", "TaskUser"]]})
+2024-10-20 15:48:42,231 INFO ipython frappe.get_all("DocType", filters={"name": ["in", ["Task", "TaskUser"]]})
+2024-10-20 15:48:42,231 INFO ipython === session end ===

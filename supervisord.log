@@ -1,0 +1,35 @@
+2024-10-21 09:28:14,474 INFO supervisord started with pid 6820
+2024-10-21 09:28:15,476 INFO spawnerr: can't find command '/usr/local/bin/bench'
+2024-10-21 09:28:16,477 INFO spawnerr: can't find command '/usr/local/bin/bench'
+2024-10-21 09:28:18,480 INFO spawnerr: can't find command '/usr/local/bin/bench'
+2024-10-21 09:28:21,484 INFO spawnerr: can't find command '/usr/local/bin/bench'
+2024-10-21 09:28:21,484 INFO gave up: frappe entered FATAL state, too many start retries too quickly
+2024-10-21 09:29:03,534 WARN received SIGINT indicating exit request
+2024-10-21 09:30:58,462 INFO supervisord started with pid 7743
+2024-10-21 09:30:59,463 INFO spawnerr: can't find command '/usr/local/bin/bench'
+2024-10-21 09:31:00,466 INFO spawnerr: can't find command '/usr/local/bin/bench'
+2024-10-21 09:31:02,469 INFO spawnerr: can't find command '/usr/local/bin/bench'
+2024-10-21 09:31:05,473 INFO spawnerr: can't find command '/usr/local/bin/bench'
+2024-10-21 09:31:05,473 INFO gave up: frappe entered FATAL state, too many start retries too quickly
+2024-10-21 09:40:34,963 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-10-21 09:40:34,964 INFO supervisord started with pid 11659
+2024-10-21 09:40:35,965 INFO spawnerr: can't find command '/usr/local/bin/bench'
+2024-10-21 09:40:36,968 INFO spawnerr: can't find command '/usr/local/bin/bench'
+2024-10-21 09:40:38,971 INFO spawnerr: can't find command '/usr/local/bin/bench'
+2024-10-21 09:40:41,975 INFO spawnerr: can't find command '/usr/local/bin/bench'
+2024-10-21 09:40:41,976 INFO gave up: frappe entered FATAL state, too many start retries too quickly
+2024-10-21 09:41:13,015 WARN received SIGINT indicating exit request
+2024-10-21 09:47:02,521 WARN received SIGINT indicating exit request
+2024-10-21 09:47:25,678 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-10-21 09:47:25,681 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-10-21 09:47:25,681 INFO supervisord started with pid 13803
+2024-10-21 09:47:26,689 INFO spawned: 'frappe' with pid 13806
+2024-10-21 09:47:26,694 WARN exited: frappe (exit status 127; not expected)
+2024-10-21 09:47:27,698 INFO spawned: 'frappe' with pid 13809
+2024-10-21 09:47:27,702 WARN exited: frappe (exit status 127; not expected)
+2024-10-21 09:47:29,709 INFO spawned: 'frappe' with pid 13856
+2024-10-21 09:47:29,715 WARN exited: frappe (exit status 127; not expected)
+2024-10-21 09:47:32,721 INFO spawned: 'frappe' with pid 13860
+2024-10-21 09:47:32,726 WARN exited: frappe (exit status 127; not expected)
+2024-10-21 09:47:33,728 INFO gave up: frappe entered FATAL state, too many start retries too quickly
+2024-10-21 09:57:35,459 WARN received SIGINT indicating exit request
